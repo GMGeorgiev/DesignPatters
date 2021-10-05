@@ -6,8 +6,7 @@ use DesignPatterns\Builder\Parts\Arm\StrikingArm;
 
 class StrikingArmAdater implements Arm 
 {
-
-    public function __construct(protected StrikingArm $strikingArm){
+    public function __construct(StrikingArm $strikingArm){
         $this->strikingArm = $strikingArm;
     }
 

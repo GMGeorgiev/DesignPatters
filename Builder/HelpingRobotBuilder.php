@@ -11,7 +11,11 @@ use DesignPatterns\Builder\Parts\Robot;
 
 class HelpingRobotBuilder implements Builder
 {
-    private HelpingRobot $helpingRobot;
+    private $helpingRobot;
+
+    public function __construct(){
+        $this->helpingRobot = new HelpingRobot();
+    }
 
     public function addArms()
     {

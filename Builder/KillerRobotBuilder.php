@@ -11,7 +11,11 @@ use DesignPatterns\Builder\Parts\Robot;
 
 class KillerRobotBuilder implements Builder
 {
-    private KillerRobot $killerRobot;
+    private $killerRobot;
+
+    public function __construct(){
+        $this->killerRobot = new KillerRobot();
+    }
 
     public function addArms()
     {

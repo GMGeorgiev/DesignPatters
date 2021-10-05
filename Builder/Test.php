@@ -1,6 +1,9 @@
 <?php declare(strict_types=1);
 
+
 namespace DesignPatterns\Builder\Tests;
+include("../vendor/phpunit/phpunit/src/Framework/TestCase.php");
+
 
 use DesignPatterns\Builder\Parts\HelpingRobot;
 use DesignPatterns\Builder\Parts\KillerRobot;
